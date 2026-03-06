@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrumboard</title>
+    <script type="module" crossorigin src="/assets/index-CTfZMlBz.js"></script>
+  </head>
+  <body>
+    <h1>Members</h1>
+    <ul id="member-list"></ul>
+
+    <h2>New Tasks</h2>
+    <ul id="new-list"></ul>
+
+    <h2>Tasks under process</h2>
+    <ul id="doing-list"></ul>
+
+    <h2>Tasks Done</h2>
+    <ul id="done-list"></ul>
+
+    <h2>Lägg till medlem</h2>
+    <form id="member-form">
+      <input type="text" name="name" placeholder="Namn" required />
+      <select name="category" required>
+        <option value="">Välj kategori</option>
+        <option value="UX">UX</option>
+        <option value="frontend-dev">Frontend Dev</option>
+        <option value="backend-dev">Backend Dev</option>
+      </select>
+      <button type="submit">Lägg till medlem</button>
+    </form>
+
+    <h2>Lägg till assignment</h2>
+    <form id="assignment-form">
+      <textarea name="description" placeholder="Task description" required></textarea>
+      <input type="text" name="title" placeholder="Task Title" required />
+      <select name="category" required>
+        <option value="">Välj kategori</option>
+        <option value="UX">UX</option>
+        <option value="frontend-dev">Frontend Dev</option>
+        <option value="backend-dev">Backend Dev</option>
+      </select>
+      <button type="submit">Lägg till Task</button>
+    </form>
+<!-- 
+    Skriptmoduler längst ner i body för att DOM redan finns
+    <script type="module" src="/src/memberpost.ts"></script>
+    <script type="module" src="/src/assignmentpost.ts"></script>
+    <script type="module" src="/src/main.ts"></script> -->
+  </body>
+</html>
